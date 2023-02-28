@@ -67,3 +67,64 @@ img {
 .text-center {
     text-align: center;
 }
+
+/** header **/
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__text {
+    text-align: center;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__text {
+        margin-top: 15rem;
+    }
+}
+
+.no-margin {
+    font-size: 1.8rem;
+    width: 100%;
+}
+/** Bar & Navigation **/
+@media (min-width: 768px) {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    color: var(--white);
+}
+
+.logo__name {
+    font-weight: normal;
+    font-size: 3.6rem;
+}
+
+.logo__bold {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+        gap: 1.6rem;
+    }
+}
+
+.Navigation__link {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--white);
+}
