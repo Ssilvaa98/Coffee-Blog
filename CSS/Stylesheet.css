@@ -19,11 +19,9 @@ body {
     font-size: 1.6rem;
     line-height: 2;
 }
-
 /** Globals **/
 .container {
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 
@@ -44,7 +42,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
 }
 
 h4 {
@@ -54,7 +52,6 @@ h4 {
 img {
     max-width: 100%;
 }
-
 /** Utilities **/
 .no-margin {
     margin: 0;
@@ -67,7 +64,6 @@ img {
 .text-center {
     text-align: center;
 }
-
 /** header **/
 .header {
     background-image: url(../img/banner.jpg);
@@ -127,4 +123,82 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--white);
+}
+/** Courses and more **/
+@media (min-width: 768px) {
+    .principal-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entry {
+    border-bottom: 1px solid grey;
+    margin-bottom: 2rem;
+}
+
+.entry:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+/** Buttons **/
+.button {
+    display: block;
+    font-family: var(--Headingfonts);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+    }
+}
+
+.button--primary {
+    background-color: var(--black);
+}
+
+.button--secondary {
+    background-color: var(--primary);
+}
+
+.courses {
+    list-style: none;
+}
+
+.widget-course {
+    border-bottom: 1px solid grey;
+    margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-course__label {
+    font-family: var(--Headingfonts);
+    font-weight: bold;
+}
+
+.widget-course__info {
+    font-weight: normal;
+}
+
+.widget-course__label, 
+.widget-course__info {
+    font-size: 1.6rem;
+}
+/** Footer **/
+.footer {
+    background-color: var(--black);
+    padding: .8rem;
+    margin-top: 2rem;
 }
