@@ -183,15 +183,19 @@ img {
     margin-bottom: 0;
 }
 
+.course__label,
 .widget-course__label {
     font-family: var(--Headingfonts);
     font-weight: bold;
 }
 
+.course__info,
 .widget-course__info {
     font-weight: normal;
 }
 
+.course__label,
+.course__info,
 .widget-course__label, 
 .widget-course__info {
     font-size: 1.6rem;
@@ -210,7 +214,8 @@ img {
 
     .About-Us__image,
     .About-Us {
-        padding: .5rem;
+        width: min(90%, 120rem);
+        margin: 0 auto;
     }
 }
 
@@ -225,7 +230,63 @@ img {
 
 @media (min-width: 1280px) {
     .About-Us {
-        padding-inline-start: 9rem;
-        padding-inline-end: 9rem;
+        width: min(90%, 120rem);
+        margin: 0 auto;
     }
+}
+/** Courses page **/
+.center-courses {
+    text-align: center;
+}
+
+.course {
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+}
+
+.course:last-of-type {
+    border: none;
+    border-bottom: none;
+}
+
+@media (min-width: 360px) {
+    .course__image,
+    .course__description,
+    .course__information {
+        padding: .5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .course__image,
+    .course__description,
+    .course__information {
+        padding: .5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        padding-inline-start: 10rem;
+        padding-inline-end: 10rem;
+        width: min(90%, 120rem);
+        margin: 0 auto;
+    }
+}
+
+.course__label {
+    font-family: var(--Headingfonts);
+    font-weight: bold;
+}
+
+.course__info {
+    font-weight: normal;
+}
+
+.course__label,
+.course__info {
+    font-size: 1.6rem;
 }
