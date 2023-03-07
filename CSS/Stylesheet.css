@@ -250,18 +250,22 @@ img {
 }
 
 @media (min-width: 360px) {
+    .course,
     .course__image,
     .course__description,
     .course__information {
-        padding: .5rem;
+        width: min(90%, 120rem);
+        margin: 0 auto;
     }
 }
 
 @media (min-width: 768px) {
+    .course,
     .course__image,
     .course__description,
     .course__information {
-        padding: .5rem;
+        width: min(90%, 120rem);
+        margin: 0 auto;
     }
 }
 
@@ -270,8 +274,6 @@ img {
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
-        padding-inline-start: 10rem;
-        padding-inline-end: 10rem;
         width: min(90%, 120rem);
         margin: 0 auto;
     }
@@ -289,4 +291,14 @@ img {
 .course__label,
 .course__info {
     font-size: 1.6rem;
+}
+/** Blog entry **/
+.principal-page {
+    text-align: center;
+}
+
+.principal-page__text {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    text-align: justify;
 }
