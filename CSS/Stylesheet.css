@@ -202,3 +202,30 @@ img {
     padding: .8rem;
     margin-top: 2rem;
 }
+/** About us page **/
+@media (min-width: 360px) {
+    .center-aboutus {
+        text-align: center;
+    }
+
+    .About-Us__image,
+    .About-Us {
+        padding: .5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .About-Us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .About-Us {
+        padding-inline-start: 9rem;
+        padding-inline-end: 9rem;
+    }
+}
