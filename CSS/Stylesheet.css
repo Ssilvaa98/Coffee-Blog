@@ -302,3 +302,7 @@ img {
     margin: 0 auto;
     text-align: justify;
 }
+
+.principal-page__image {
+    padding: 0.3rem;
+}
