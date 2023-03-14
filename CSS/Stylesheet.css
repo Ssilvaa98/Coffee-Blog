@@ -161,6 +161,10 @@ img {
     }
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .button--primary {
     background-color: var(--black);
 }
@@ -305,4 +309,96 @@ img {
 
 .principal-page__image {
     padding: 0.3rem;
+}
+/** Contact us page **/
+.center-contact {
+    text-align: center;
+}
+
+.contact-backgound {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: min(65%, 120rem);
+    margin: 0 auto;
+}
+
+@media (min-width: 360px) {
+    .form {
+        background-color: var(--white);
+        padding-top: 1rem;
+        width: min(90%, 120rem);
+        margin: 0 auto;
+    }
+    
+    .camp {
+        display: flex;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+    
+    .camp__label {
+        flex: 0 0 9rem;
+    }
+    
+    .camp__field {
+        flex: 1;
+        margin-inline-end: 5rem;
+        border: 1px solid lightgray;
+        width: min(90%, 120rem);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        background-color: var(--white);
+        margin: -5rem auto 0 auto;
+        width: min(61%, 120rem);
+        padding: 3rem;
+    }
+    
+    .camp {
+        display: flex;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+    
+    .camp__label {
+        flex: 0 0 9rem;
+        text-align: right;
+        width: min(61%, 120rem);
+    }
+    
+    .camp__field {
+        flex: 1;
+        border: 1px solid lightgray;
+        width: min(61%, 120rem);
+    }
+}
+
+@media (min-width: 1440px) {
+    .form {
+        background-color: var(--white);
+        margin: -5rem auto 0 auto;
+        width: min(61%, 120rem);
+        padding: 3rem;
+    }
+        
+    .camp {
+        display: flex;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+        
+    .camp__label {
+        flex: 0 0 9rem;
+        text-align: right;
+    }
+        
+    .camp__field {
+        flex: 1;
+        border: 1px solid lightgray;
+    }
 }
