@@ -7,12 +7,19 @@
     <title> Coffee Blog </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Prefetch -->
+
+    <link rel="Prefetch" href="Courses.html" as="document">
+
     <!-- Preload -->
 
     <link rel="Preload" href="CSS/Normalize.css" as="style">
     <link rel="stylesheet" href="CSS/Normalize.css">
+
+    <link rel="Preload" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:wght@400;700&display=swap"
+    crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="Preload" href="CSS/Stylesheet.css" as="style">
     <link rel="stylesheet" href="CSS/Stylesheet.css">
@@ -48,7 +55,10 @@
 
             <article class="entry">
                 <div class="entry__image">
-                    <img src="img/blog1.jpg" alt="blog image" loading="lazy">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img src="img/blog1.jpg" alt="blog image" loading="lazy">
+                    </picture>
                 </div>
 
                 <div class="content__entry">
@@ -63,7 +73,10 @@
 
             <article class="entry">
                 <div class="entry__image">
-                    <img src="img/blog2.jpg" alt="blog image" loading="lazy">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img src="img/blog2.jpg" alt="blog image" loading="lazy">
+                    </picture>
                 </div>
 
                 <div class="content__entry">
@@ -78,7 +91,10 @@
 
             <article class="entry">
                 <div class="entry__image">
-                    <img src="img/blog3.jpg" alt="blog image" loading="lazy">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img src="img/blog3.jpg" alt="blog image" loading="lazy">
+                    </picture>
                 </div>
 
                 <div class="content__entry">
